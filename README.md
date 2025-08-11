@@ -17,3 +17,6 @@ Interfaz de usuario para un asistente de inteligencia artificial, construida con
 - **React** + **Next.js**
 - **TailwindCSS**
 - **TypeScript**
+
+## Deploy:
+https://rigo-ai-assistant-api.vercel.app/
