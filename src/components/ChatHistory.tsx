@@ -13,7 +13,7 @@ export default function ChatHistory() {
 
     const fetchChats = async () => {
         return;
-        try {
+        /*try {
             const token = localStorage.getItem("token");
             if (!token) {
                 setError("Unauthorized");
@@ -31,17 +31,21 @@ export default function ChatHistory() {
 
             const data = await res.json();
             setChats(data);
-        } catch (err: any) {
-            setError(err.message);
+        } catch (err: unknown) {
+            if (err instanceof Error) {
+                alert(err.message);
+            } else {
+                alert("Error");
+            }
         } finally {
             setLoading(false);
-        }
+        }*/
     };
 
     const createChat = async () => {
         alert("coming soon!");
         return;
-        try {
+        /*try {
             const token = localStorage.getItem("token");
             if (!token) return;
 
@@ -58,9 +62,13 @@ export default function ChatHistory() {
 
             const newChat = await res.json();
             setChats((prev) => [newChat, ...prev]);
-        } catch (err: any) {
-            alert(err.message);
-        }
+        } catch (err: unknown) {
+            if (err instanceof Error) {
+                alert(err.message);
+            } else {
+                alert("Error");
+            }
+        }*/
     };
 
     useEffect(() => {
