@@ -19,4 +19,4 @@ Interfaz de usuario para un asistente de inteligencia artificial, construida con
 - **TypeScript**
 
 ## Deploy:
-https://rigo-ai-assistant-api.vercel.app/
+https://rigo-ai-assistant-ui.vercel.app/
